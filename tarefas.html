@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAREFAS</title>
+</head>
+<body>
+    <header> <nav style="background-color: aqua;">
+            <ul>
+                <li><a href="dashboard.html">DASHBOARD</a></li>
+                <li><a href="tarefas.html">TAREFAS</a></li>
+                <li><a href="projetos.html">PROJETOS</a></li>
+                <li><a href="usuarios.html">USUARIOS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <H2>Formulario de Tarefas</H2>
+    <hr>
+        <form>
+            <label for="titulo">Titulo</label><br>
+            <input type="text" id="titulo" name="titulo" placeholder="Digite o titulo da tarefa"><br><br>
+
+            <label for="prioridade">Prioridade</label><br>
+          
+            <select  name="prioridade" id="prioridade" >  
+
+            <option>Alta</option>
+            <option>Média</option>
+            <option>Baixa</option>
+       
+            </select>
+
+            <label for="responsavel">Responsável</label>
+            <input type="text" id="responsavel" name="responsavel">
+
+            <label >Descrição</label>
+            <textarea name="descricao" id="descricao" style="width: 100px;height: 100px;">
+                Descreva a tarefa
+            </textarea>
+            
+            <label for="dtdescricao">Data de criação</label>
+            <input type="date" id="dtdescricao" name="dtdescricao">
+
+            <label for="dtConclusao">Data de Conclusão</label>
+            <input type="date" id="dtConclusao" name="dtConclusao">
+
+            <label for="status">Status*</label>
+            <select name="status" id="status">
+                <option>selecione</option>
+                  <option>Pendente</option>
+                    <option>Em andamento</option>
+                      <option>Concluido</option>
+                        <option>Entregue</option>
+            </select>
+
+             <label for="projeto">Projeto*</label>
+            <select name="projeto" id="projeto">
+                <option>selecione</option>
+                  <option>website</option>
+                    <option>Aplicativo</option>
+                      <option>Sistema Interno</option>
+                        <option>Outro</option>
+
+                        <input type="checkbox" id="lembrete" name="lembrete">
+                        <label for="lembrete">Definir Lembrete</label>
+                        
+                        <button type="submit" id="btnsalvartarefa">Enviar</button>
+                         <button type="button" id="btncancelartarefa">Cancelar</button>
+
+        </form>
+    </main>
+    
+</body>
+</html>
